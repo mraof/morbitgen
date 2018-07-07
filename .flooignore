@@ -1,0 +1,8 @@
+extern
+node_modules
+tmp
+vendor
+target
+.idea/workspace.xml
+.idea/misc.xml
+/release/

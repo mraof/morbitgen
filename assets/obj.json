@@ -1,0 +1,824 @@
+{
+  "order": [
+    "head casing category",
+    "head casing",
+    "wing term",
+    "skin",
+    "skin term",
+    "slime type",
+    "head casing color",
+    "head casing palette"
+  ],
+  "rename": {
+    "hands": "wings",
+    "teeth": "mouth"
+  },
+  "attributes": {
+    "species": {
+      "choose": {
+        "obj": {}
+      },
+      "replace": true
+    },
+    "morph": {
+      "choose": {
+        "bird": {
+          "chance": "VeryCommon"
+        },
+        "bat": {},
+        "aquatic": {
+          "chance": "Rare"
+        },
+        "bug": {},
+        "mammal": {
+          "chance": "ExtremelyRare"
+        }
+      }
+    },
+    "head casing category": {
+      "choose": {
+        "toy": {},
+        "geometric": {},
+        "custom": {
+          "chance": "Rare"
+        },
+        "inorganic": {},
+        "misc": {
+          "chance": "Rare"
+        },
+        "mechanical": {},
+        "fragile": {},
+        "organic": {
+          "chance": "Rare"
+        },
+        "bizarre": {
+          "chance": "ExtremelyRare"
+        }
+      }
+    },
+    "head casing": {
+      "choose": {
+        "toy": {
+          "choose": {
+            "toy": {
+              "chance": "Uncommon"
+            },
+            "plush": {
+              "chance": "Uncommon"
+            },
+            "doll": {},
+            "puppet": {},
+            "teddy bear": {},
+            "rc car": {},
+            "building block": {},
+            "stuffed animal": {},
+            "action figure": {},
+            "globe": {},
+            "yoyo": {},
+            "drinky bird": {},
+            "toy clown": {},
+            "jack in the box": {},
+            "toy train": {},
+            "ornament": {},
+            "bounce house": {},
+            "kite": {},
+            "coloring book": {},
+            "crayons": {},
+            "pencil": {},
+            "fishbowl": {},
+            "sports equipment": {},
+            "ball": {},
+            "board games": {},
+            "tops": {},
+            "trading cards": {},
+            "book": {},
+            "morbit jenga": {},
+            "morbit rubix cube": {},
+            "videogame controller": {},
+            "videogame system": {},
+            "finger trap": {},
+            "joystick": {},
+            "marble maze": {},
+            "designer toy": {},
+            "playset": {},
+            "dollhouse": {},
+            "ping pong ball": {},
+            "ping pong paddle": {},
+            "pet toy": {},
+            "rattle": {},
+            "baby blanket": {},
+            "blanket": {},
+            "pillow": {},
+            "balloon": {},
+            "ball in a cup": {},
+            "rubber duck": {},
+            "nut cracker": {},
+            "matryoshka doll": {},
+            "wheel": {},
+            "chemistry set": {},
+            "beaker": {},
+            "fidget spinner": {
+              "chance": "ExtremelyRare"
+            },
+            "juggling clubs": {},
+            "juggling balls": {},
+            "glow in the dark star": {},
+            "pogs": {},
+            "skateboard": {},
+            "scooter": {},
+            "bike": {},
+            "toy sword": {},
+            "real sword": {},
+            "water pistol ": {},
+            "nerf gun": {},
+            "bow and arrow": {},
+            "sock puppet": {}
+          },
+          "requires": [
+            "head casing category:toy"
+          ]
+        },
+        "geometric": {
+          "choose": {
+            "simple": {
+              "chance": "Uncommon"
+            },
+            "geometric": {
+              "chance": "Uncommon"
+            },
+            "sphere": {},
+            "cube": {},
+            "pyramid": {},
+            "tetrahedron": {},
+            "cylinder": {},
+            "prism": {},
+            "orb": {},
+            "cone": {},
+            "disk": {},
+            "obelisk": {},
+            "circle": {},
+            "triangle": {},
+            "square": {},
+            "rectangle": {},
+            "clamshell": {},
+            "pocket": {},
+            "hemisphere": {},
+            "hourglass": {},
+            "snowman shaped": {},
+            "abstract": {},
+            "revolved solid": {},
+            "letters": {},
+            "numbers": {},
+            "ziggurat": {},
+            "tower": {},
+            "bizarre shapes": {},
+            "unknowable shapes": {},
+            "shifting shapes": {},
+            "mobius strip": {},
+            "torus": {}
+          },
+          "requires": [
+            "head casing category:geometric"
+          ]
+        },
+        "custom": {
+          "choose": {
+            "custom": {
+              "chance": "Uncommon"
+            },
+            "homemade": {},
+            "designer": {},
+            "mass produced": {},
+            "other species inspired": {}
+          },
+          "requires": [
+            "head casing category:custom"
+          ]
+        },
+        "inorganic": {
+          "choose": {
+            "inorganic": {
+              "chance": "Uncommon"
+            },
+            "plastic": {},
+            "rubber": {},
+            "moldable": {},
+            "leather": {},
+            "sandpaper": {},
+            "stone": {},
+            "velvet": {},
+            "crushed glass": {},
+            "stained glass": {},
+            "metal": {},
+            "fly paper": {},
+            "wax": {},
+            "clay": {},
+            "modeling clay": {},
+            "diamond": {},
+            "wire": {},
+            "mesh": {}
+          },
+          "requires": [
+            "head casing category:inorganic"
+          ]
+        },
+        "misc": {
+          "choose": {
+            "misc": {
+              "chance": "Uncommon"
+            },
+            "light bulb": {},
+            "neon sign": {},
+            "snowglobe": {},
+            "glitter jar": {},
+            "soap": {},
+            "fidget cube": {},
+            "bottle": {},
+            "flask ": {},
+            "fountain": {
+              "choose": {
+                "fountain": {
+                  "chance": "Common"
+                },
+                "birdbath": {}
+              }
+            },
+            "painting": {},
+            "sign": {},
+            "billboard": {},
+            "mirror": {},
+            "crate": {},
+            "bowl": {},
+            "cheese grater": {},
+            "knife": {},
+            "gun": {},
+            "wind chime": {},
+            "music box": {},
+            "kazoo": {},
+            "taser": {},
+            "stapler": {},
+            "staple remover": {},
+            "bear trap": {}
+          },
+          "requires": [
+            "head casing category:misc"
+          ]
+        },
+        "mechanical": {
+          "choose": {
+            "mechanical": {
+              "chance": "Uncommon"
+            },
+            "appliance": {
+              "choose": {
+                "appliance": {
+                  "chance": "Common"
+                },
+                "blender": {},
+                "microwave": {},
+                "can opener": {},
+                "stovetop": {},
+                "toaster": {},
+                "dishwasher": {},
+                "refrigerator": {},
+                "freezer": {}
+              }
+            },
+            "electronic": {
+              "choose": {
+                "electronic": {
+                  "chance": "Common"
+                },
+                "television": {},
+                "radio": {},
+                "computer": {},
+                "solar panel": {},
+                "wind turbine": {},
+                "camera": {},
+                "microphone": {},
+                "speakers": {},
+                "clock": {},
+                "security camera": {},
+                "webcam": {}
+              }
+            },
+            "robotic": {
+              "choose": {
+                "robotic": {
+                  "chance": "Common"
+                },
+                "laser": {},
+                "robot": {},
+                "construct": {}
+              }
+            }
+          },
+          "requires": [
+            "head casing category:mechanical"
+          ]
+        },
+        "fragile": {
+          "choose": {
+            "fragile": {
+              "chance": "Uncommon"
+            },
+            "glass": {},
+            "soda can": {},
+            "ceramic": {},
+            "paper": {},
+            "cardboard": {},
+            "wax paper": {},
+            "bubble": {},
+            "jar": {},
+            "window": {},
+            "origami": {},
+            "papercraft": {},
+            "sandcastle": {},
+            "haystack": {},
+            "glass ornament": {},
+            "vase": {},
+            "veiled": {},
+            "polyester stuffing": {},
+            "fabric": {},
+            "ice cube": {}
+          },
+          "requires": [
+            "head casing category:fragile"
+          ]
+        },
+        "organic": {
+          "choose": {
+            "organic": {
+              "chance": "Uncommon"
+            },
+            "vine": {},
+            "flower": {},
+            "bush": {},
+            "wood": {},
+            "fungus": {},
+            "flesh": {
+              "choose": {
+                "flesh": {
+                  "chance": "Common"
+                },
+                "maw": {},
+                "teeth": {}
+              },
+              "chance": "ExtremelyRare"
+            },
+            "fur": {
+              "chance": "ExtremelyRare"
+            },
+            "plant": {},
+            "food": {
+              "chance": "ExtremelyRare"
+            },
+            "slime": {},
+            "crystal": {
+              "choose": {
+                "crystal": {
+                  "chance": "Common"
+                },
+                "toxic crystal": {}
+              }
+            },
+            "another person’s head": {
+              "chance": "ExtremelyRare"
+            },
+            "taxidermy": {
+              "chance": "ExtremelyRare"
+            },
+            "liquids": {
+              "choose": {
+                "liquids": {
+                  "chance": "Common"
+                },
+                "river": {},
+                "water": {},
+                "lava": {},
+                "koi pond": {}
+              }
+            },
+            "scales": {},
+            "feathers": {},
+            "egg": {
+              "choose": {
+                "egg": {
+                  "chance": "Common"
+                },
+                "egg yolk": {}
+              }
+            },
+            "marimo": {},
+            "moss": {},
+            "lichen": {},
+            "leaves": {}
+          },
+          "requires": [
+            "head casing category:organic"
+          ]
+        },
+        "bizarre": {
+          "choose": {
+            "bizarre": {
+              "chance": "Uncommon"
+            },
+            "hologram": {
+              "chance": "ExtremelyRare"
+            },
+            "lizard": {
+              "chance": "ExtremelyRare"
+            },
+            "cake": {},
+            "sticker": {},
+            "cloud": {},
+            "nested": {},
+            "horror": {
+              "chance": "ExtremelyRare"
+            },
+            "scrap": {
+              "chance": "ExtremelyRare"
+            },
+            "shred": {
+              "chance": "ExtremelyRare"
+            },
+            "masked": {},
+            "costumed": {},
+            "weather/space": {
+              "choose": {
+                "space": {
+                  "chance": "Common"
+                },
+                "weather": {
+                  "chance": "Common"
+                },
+                "mist": {},
+                "smog": {},
+                "sun": {},
+                "star": {},
+                "moon": {},
+                "meteor": {},
+                "constellation": {},
+                "void": {}
+              }
+            },
+            "castle": {},
+            "drug": {},
+            "pill bottle": {},
+            "dimensional": {},
+            "door": {},
+            "wireframe": {},
+            "polygonal": {},
+            "3d model": {},
+            "portal": {},
+            "code": {},
+            "program": {},
+            "bong": {},
+            "low poly": {},
+            "mimic": {},
+            "shapeshifter": {},
+            "steam": {},
+            "vibrating": {},
+            "cigarette": {},
+            "vape": {},
+            "vape cloud": {},
+            "booze bottle": {},
+            "an entire animal": {},
+            "acid": {},
+            "haunted house": {},
+            "house": {},
+            "factory": {},
+            "tcp": {},
+            "pocket home": {},
+            "tape dispenser": {},
+            "dream": {},
+            "coffin": {},
+            "stardust": {}
+          },
+          "requires": [
+            "head casing category:bizarre"
+          ]
+        }
+      }
+    },
+    "hair length": {
+      "choose": {
+        "no": {}
+      },
+      "chance": "ExtremelyRare"
+    },
+    "eye shape": {
+      "choose": {
+        "no": {}
+      },
+      "chance": "ExtremelyRare"
+    },
+    "mouth": {
+      "choose": {
+        "jagged line": {
+          "chance": "VeryCommon"
+        },
+        "wavy": {},
+        "straight": {},
+        "bumpy": {},
+        "stretchy": {},
+        "straight line": {}
+      },
+      "replace": true
+    },
+    "tongue": {
+      "choose": {
+        "slime": {
+          "chance": "ExtremelyCommon"
+        }
+      },
+      "chance": "ExtremelyRare"
+    },
+    "ear size": {
+      "choose": {
+        "no": {}
+      },
+      "chance": "ExtremelyRare"
+    },
+    "breasts": {
+      "choose": {
+        "flat": {
+          "chance": "Uncommon"
+        }
+      }
+    },
+    "weight": {
+      "choose": {
+        "thin": {
+          "chance": "Uncommon"
+        }
+      }
+    },
+    "stomach": {
+      "choose": {
+        "flat": {
+          "chance": "Uncommon"
+        },
+        "muscular": {
+          "chance": "VeryRare"
+        }
+      }
+    },
+    "hips": {
+      "choose": {
+        "wide": {
+          "chance": "Common"
+        }
+      }
+    },
+    "leg size": {
+      "choose": {
+        "muscular": {
+          "chance": "VeryRare"
+        }
+      }
+    },
+    "muscle": {
+      "replace": true
+    },
+    "wings": {
+      "choose": {
+        "bird": {
+          "choose": {
+            "sparrow": {},
+            "budgie": {},
+            "seagull": {
+              "chance": "Rare"
+            },
+            "hawk": {},
+            "falcon": {},
+            "hummingbird": {
+              "chance": "Rare"
+            },
+            "duck": {},
+            "chicken": {},
+            "featherless": {
+              "chance": "ExtremelyRare"
+            }
+          },
+          "requires": [
+            "morph:bird"
+          ]
+        },
+        "bug": {
+          "choose": {
+            "beetle": {},
+            "bee": {},
+            "butterfly": {},
+            "dragonfly": {},
+            "moth": {},
+            "mantis": {
+              "chance": "ExtremelyRare"
+            }
+          },
+          "requires": [
+            "morph:bug"
+          ]
+        },
+        "aquatic": {
+          "choose": {
+            "dolphin": {},
+            "whale": {},
+            "seal": {},
+            "sea lion": {},
+            "fish": {},
+            "shark": {},
+            "squid": {
+              "chance": "ExtremelyRare"
+            },
+            "octopus": {
+              "chance": "ExtremelyRare"
+            },
+            "jellyfish": {
+              "chance": "ExtremelyRare"
+            }
+          },
+          "requires": [
+            "morph:aquatic"
+          ]
+        },
+        "bat": {
+          "requires": [
+            "morph:bat"
+          ]
+        },
+        "mammal": {
+          "choose": {
+            "claws": {},
+            "paws": {},
+            "fingers": {}
+          },
+          "requires": [
+            "morph:mammal"
+          ]
+        }
+      },
+      "replace": true
+    },
+    "feet": {
+      "choose": {
+        "obj": {}
+      },
+      "replace": true
+    },
+    "wing term": {
+      "choose": {
+        "wings": {
+          "requires": [
+            "morph:bird|morph:bat|morph:bug"
+          ]
+        },
+        "fins": {
+          "requires": [
+            "morph:aquatic"
+          ]
+        },
+        "hands": {
+          "requires": [
+            "morph:mammal"
+          ]
+        },
+        "tentacles": {
+          "chance": "Always",
+          "requires": [
+            "wings:squid|wings:octopus|wings:jellyfish"
+          ]
+        },
+        "scythes": {
+          "chance": "Always",
+          "requires": [
+            "wings:mantis"
+          ]
+        }
+      }
+    },
+    "tail type": {
+      "replace": true
+    },
+    "slime type": {
+      "choose": {
+        "standard": {},
+        "metallic": {
+          "chance": "ExtremelyRare"
+        },
+        "shiny": {
+          "chance": "Rare"
+        },
+        "matte": {
+          "chance": "Rare"
+        },
+        "chunky": {
+          "chance": "ExtremelyRare"
+        }
+      }
+    },
+    "skin": {
+      "choose": {
+        "moist": {},
+        "slimy": {},
+        "bumpy": {},
+        "bird": {
+          "choose": {
+            "feathers": {},
+            "down": {},
+            "feather patches": {}
+          },
+          "requires": [
+            "morph:bird"
+          ]
+        },
+        "bug": {
+          "choose": {
+            "carapace": {},
+            "exoskeleton": {}
+          },
+          "requires": [
+            "morph:bug"
+          ]
+        },
+        "aquatic": {
+          "choose": {
+            "rough": {},
+            "scales": {},
+            "slick": {}
+          },
+          "requires": [
+            "morph:aquatic"
+          ]
+        },
+        "bat": {
+          "choose": {
+            "rough": {},
+            "scales": {},
+            "slick": {}
+          },
+          "requires": [
+            "morph:bat"
+          ]
+        },
+        "mammal": {
+          "choose": {
+            "short fur": {},
+            "fur": {},
+            "long fur": {},
+            "skin": {},
+            "hair": {},
+            "short hair": {},
+            "long hair": {}
+          },
+          "requires": [
+            "morph:mammal"
+          ]
+        }
+      }
+    },
+    "skin term": {
+      "choose": {
+        "skin": {},
+        "": {
+          "requires": [
+            "skin:feathers|skin:down|skin:feather patches|skin:carapace|skin:exoskeleton|skin:scales|skin:short fur|skin:fur|skin:long fur|skin:skin|skin:short hair|skin:hair|skin:long hair"
+          ],
+          "chance": "Always"
+        }
+      }
+    },
+    "gender": {
+      "choose": {
+        "nonbinary": {
+          "chance": "Common"
+        },
+        "agender": {
+          "chance": "Common"
+        },
+        "genderqueer": {
+          "chance": "Common"
+        },
+        "questioning": {
+          "chance": "Common"
+        }
+      }
+    },
+    "roll head casing color": {},
+    "head casing color": {
+      "reuse": "color",
+      "requires": [
+        "roll head casing color:yes|roll part colors:yes"
+      ]
+    },
+    "head casing palette": {
+      "reuse": "palette",
+      "requires": [
+        "roll head casing color:yes|roll part colors:yes"
+      ]
+    }
+  },
+  "formatting": {
+    "full": "[!name:*?This][name:*?[Name]] is a [morph] [species] with [!skin term:?[skin], [color] [skin term]][skin term:?[color] [skin]], [wings] [wing term], [slime type] slime and a [palette] palette.\n[Subjective] [is] a [height] [species] with a [weight] build and [size] scale.\n[Subjective] [has] a [!head size:standard?[head size]] [head casing color] [head casing] head casing with [head casing palette?a [head casing palette] palette,] [!eye shape:no?[eye shape] eyes that have [pupil] pupils,] [!ear size:no?[ear size] [ear type] ears,] [!hair length:no?[hair length] [hair style] hair,] [mouth] mouth and a [tongue] tongue.\n[Subjective] [has] a [neck] neck, [shoulders] shoulders, [breasts] breasts, a [chest] chest, [stomach] stomach, [hips] hips, [leg length] [!leg size:standard?[leg size]] legs and [feet] feet.\n[Subjective] identif[is:is?ies][is:are?y] as [gender] and use[is:is?s] [subjective]/[objective]."
+  }
+}

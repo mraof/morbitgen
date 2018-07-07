@@ -1,0 +1,520 @@
+{
+  "order": [
+    "species",
+    "morph",
+    "size",
+    "head size",
+    "head shape",
+    "hair length",
+    "hair style",
+    "eye shape",
+    "pupil",
+    "teeth",
+    "tongue",
+    "ear size",
+    "ear type",
+    "neck",
+    "chest",
+    "breasts",
+    "weight",
+    "height",
+    "stomach",
+    "hips",
+    "leg size",
+    "leg length",
+    "muscle",
+    "feet",
+    "hands",
+    "shoulders",
+    "arm size",
+    "arm length",
+    "tail length",
+    "tail type",
+    "blood",
+    "bones",
+    "organs",
+    "gender",
+    "color",
+    "palette",
+    "subjective",
+    "objective",
+    "possessive",
+    "reflexive",
+    "is",
+    "has"
+  ],
+  "attributes": {
+    "species": {
+      "choose": {
+        "base": {}
+      }
+    },
+    "head size": {
+      "choose": {
+        "small": {},
+        "standard": {},
+        "large": {}
+      }
+    },
+    "head shape": {},
+    "hair length": {
+      "choose": {
+        "no": {},
+        "buzzed": {},
+        "very short": {},
+        "short": {},
+        "medium": {},
+        "long": {},
+        "very long": {},
+        "floor length": {}
+      }
+    },
+    "hair style": {
+      "choose": {
+        "straight": {},
+        "curly": {},
+        "wavy": {},
+        "angular": {},
+        "wispy": {},
+        "swirly": {}
+      },
+      "requires": [
+        "!hair length:no"
+      ]
+    },
+    "gender": {
+      "choose": {
+        "female": {},
+        "male": {},
+        "demigirl": {},
+        "demiboy": {},
+        "nonbinary": {},
+        "agender": {},
+        "genderqueer": {},
+        "questioning": {},
+        "neutrois": {},
+        "androgyne": {},
+        "bigender": {},
+        "pangender": {},
+        "unknown": {},
+        "other": {}
+      }
+    },
+    "eye shape": {
+      "choose": {
+        "round": {},
+        "pointed": {},
+        "droopy": {},
+        "almond": {}
+      }
+    },
+    "pupil": {
+      "choose": {
+        "round": {},
+        "slit": {},
+        "no": {}
+      },
+      "requires": [
+        "!eye shape:no"
+      ]
+    },
+    "teeth": {
+      "choose": {
+        "standard": {},
+        "crooked": {},
+        "missing": {},
+        "gums": {}
+      }
+    },
+    "tongue": {
+      "choose": {
+        "standard": {},
+        "long": {},
+        "pointed": {},
+        "forked": {}
+      }
+    },
+    "ear size": {
+      "choose": {
+        "large": {},
+        "small": {},
+        "long": {},
+        "short": {}
+      }
+    },
+    "ear type": {
+      "choose": {
+        "folded": {},
+        "curled": {},
+        "cropped": {},
+        "normal": {},
+        "lop": {}
+      },
+      "requires": [
+        "!ear size:no"
+      ]
+    },
+    "neck": {
+      "choose": {
+        "short": {},
+        "standard": {},
+        "long": {}
+      }
+    },
+    "chest": {
+      "choose": {
+        "thin": {},
+        "standard": {},
+        "broad": {}
+      }
+    },
+    "breasts": {
+      "choose": {
+        "flat": {},
+        "small": {},
+        "medium": {},
+        "large": {},
+        "huge": {}
+      }
+    },
+    "weight": {
+      "choose": {
+        "skeletal": {
+          "chance": "Rare"
+        },
+        "thin": {},
+        "sleek": {},
+        "average": {},
+        "soft": {},
+        "chubby": {},
+        "fat": {}
+      }
+    },
+    "height": {
+      "choose": {
+        "very very short": {
+          "chance": "VeryRare"
+        },
+        "very short": {
+          "chance": "Rare"
+        },
+        "short": {},
+        "average": {},
+        "tall": {},
+        "very tall": {
+          "chance": "Rare"
+        },
+        "very very tall": {
+          "chance": "VeryRare"
+        }
+      }
+    },
+    "stomach": {
+      "choose": {
+        "flat": {},
+        "large": {},
+        "pudgy": {},
+        "muscular": {}
+      }
+    },
+    "hips": {
+      "choose": {
+        "wide": {},
+        "average": {},
+        "straight": {},
+        "slender": {}
+      }
+    },
+    "leg size": {
+      "choose": {
+        "thin": {},
+        "standard": {},
+        "thick": {},
+        "muscular": {}
+      }
+    },
+    "leg length": {
+      "choose": {
+        "very short": {
+          "chance": "Rare"
+        },
+        "short": {},
+        "standard": {},
+        "long": {},
+        "very long": {
+          "chance": "Rare"
+        }
+      }
+    },
+    "butt": {
+      "choose": {
+        "average": {},
+        "small": {},
+        "flat": {},
+        "large": {},
+        "bubble": {}
+      }
+    },
+    "muscle": {
+      "choose": {
+        "emaciated": {
+          "chance": "Rare"
+        },
+        "sickly": {},
+        "weak": {},
+        "standard": {},
+        "strong": {},
+        "buff": {},
+        "jacked": {
+          "chance": "ExtremelyRare"
+        },
+        "bodybuilder": {},
+        "swimmer": {},
+        "runner": {},
+        "gymnast": {}
+      }
+    },
+    "feet": {
+      "choose": {
+        "very small": {},
+        "small": {},
+        "standard": {},
+        "large": {},
+        "very large": {}
+      }
+    },
+    "hands": {
+      "choose": {
+        "very small": {},
+        "small": {},
+        "standard": {},
+        "large": {},
+        "very large": {}
+      }
+    },
+    "shoulders": {
+      "choose": {
+        "broad": {},
+        "narrow": {},
+        "average": {}
+      }
+    },
+    "size": {
+      "choose": {
+        "regular": {},
+        "small": {
+          "chance": "Rare"
+        },
+        "large": {
+          "chance": "Rare"
+        }
+      }
+    },
+    "color": {
+      "choose": {
+        "pink": {},
+        "red": {},
+        "orange": {},
+        "yellow": {},
+        "chartreuse/yellow green": {},
+        "green": {},
+        "blue": {},
+        "indigo": {},
+        "purple": {},
+        "horror black": {
+          "chance": "VeryRare"
+        },
+        "pure white": {
+          "chance": "VeryRare"
+        },
+        "white": {},
+        "light grey": {},
+        "mid-light grey": {},
+        "grey": {},
+        "mid-dark grey": {},
+        "dark grey": {},
+        "black": {},
+        "tan": {},
+        "light brown": {},
+        "brown": {},
+        "dark brown": {}
+      }
+    },
+    "palette": {
+      "choose": {
+        "monochrome": {},
+        "analogous": {},
+        "triad": {},
+        "complementary": {},
+        "split complementary": {},
+        "neutral with accent": {}
+      }
+    },
+    "roll part colors": {},
+    "subjective": {
+      "choose": {
+        "they": {},
+        "he": {
+          "requires": [
+            "gender:male"
+          ],
+          "chance": "Always"
+        },
+        "she": {
+          "requires": [
+            "gender:female"
+          ],
+          "chance": "Always"
+        }
+      }
+    },
+    "objective": {
+      "choose": {
+        "them": {
+          "requires": [
+            "subjective:they"
+          ],
+          "chance": "Always"
+        },
+        "it": {
+          "requires": [
+            "subjective:it"
+          ],
+          "chance": "Always"
+        },
+        "her": {
+          "requires": [
+            "subjective:she"
+          ],
+          "chance": "Always"
+        },
+        "him": {
+          "requires": [
+            "subjective:he"
+          ],
+          "chance": "Always"
+        },
+        "me": {
+          "requires": [
+            "subjective:I"
+          ],
+          "chance": "Always"
+        },
+        "us": {
+          "requires": [
+            "subjective:we"
+          ],
+          "chance": "Always"
+        }
+      }
+    },
+    "possessive": {
+      "choose": {
+        "their": {
+          "requires": [
+            "subjective:they"
+          ],
+          "chance": "Always"
+        },
+        "its": {
+          "requires": [
+            "subjective:it"
+          ],
+          "chance": "Always"
+        },
+        "her": {
+          "requires": [
+            "subjective:she"
+          ],
+          "chance": "Always"
+        },
+        "his": {
+          "requires": [
+            "subjective:he"
+          ],
+          "chance": "Always"
+        },
+        "my": {
+          "requires": [
+            "subjective:I"
+          ],
+          "chance": "Always"
+        },
+        "us": {
+          "requires": [
+            "subjective:our"
+          ],
+          "chance": "Always"
+        }
+      }
+    },
+    "reflexive": {
+      "choose": {
+        "themselves": {
+          "requires": [
+            "subjective:they"
+          ],
+          "chance": "Always"
+        },
+        "itself": {
+          "requires": [
+            "subjective:it"
+          ],
+          "chance": "Always"
+        },
+        "herself": {
+          "requires": [
+            "subjective:she"
+          ],
+          "chance": "Always"
+        },
+        "himself": {
+          "requires": [
+            "subjective:he"
+          ],
+          "chance": "Always"
+        },
+        "myself": {
+          "requires": [
+            "subjective:I"
+          ],
+          "chance": "Always"
+        },
+        "ourselves": {
+          "requires": [
+            "subjective:we"
+          ],
+          "chance": "Always"
+        }
+      }
+    },
+    "is": {
+      "choose": {
+        "are": {
+          "requires": [
+            "subjective:they|subjective:you|subjective:we"
+          ],
+          "chance": "Always"
+        },
+        "am": {
+          "requires": [
+            "subjective:I"
+          ],
+          "chance": "Always"
+        },
+        "is": {}
+      }
+    },
+    "has": {
+      "choose": {
+        "have": {
+          "requires": [
+            "subjective:they|subjective:you|subjective:we|subjective:I"
+          ],
+          "chance": "Always"
+        },
+        "has": {}
+      }
+    }
+  }
+}

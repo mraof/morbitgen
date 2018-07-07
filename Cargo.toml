@@ -1,0 +1,11 @@
+[package]
+name = "morbitgen"
+version = "0.1.0"
+authors = ["mraof <mraof@mraof.com>"]
+
+[dependencies]
+rand = "*"
+serde = "1.*"
+serde_json = "1.*"
+serde_derive = "1.*"
+lazy_static = "*"

@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<h1>morbitgen webassembly test</h1>
+<body>
+<input type="button" value="reroll" onclick="roll()">
+<b>presets: <input type="text" style="width: 70%" id="presets"
+                   value="flavor:normal|flavor:unusually sweet,planet:morbit"></b></body>
+<body>
+<script type="text/javascript">
+    function roll() {
+        document.getElementById("test").innerHTML = "Not loaded yet";
+    }
+
+    var element = document.createElement("script");
+    element.onload = setupGenerator;
+    if (typeof WebAssembly === 'object') {
+        document.getElementsByTagName('h1')[0].innerHTML = "morbitgen using webassembly";
+        element.src = "morbitgen.js";
+    } else {
+        document.getElementsByTagName('h1')[0].innerHTML = "morbitgen using asm.js";
+        element.src = "morbitgen-asmjs.js";
+    }
+    document.getElementsByTagName("head")[0].appendChild(element);
+
+    var template = "obj";
+
+    function setupGenerator() {
+        document.getElementById("test").innerHTML = "Waiting for runtime to be initialized";
+        Module['onRuntimeInitialized'] = function () {
+            var generate = Module.cwrap('generate', 'string', ['string', 'string']);
+            roll = function () {
+                var presets = document.getElementById("presets").value.split(',').filter(function (i) {
+                    return i
+                });
+                var generated = JSON.parse(generate(template, JSON.stringify(presets)));
+                var outputString = "";
+                for (var key in generated) {
+                    if (generated.hasOwnProperty(key)) {
+                        outputString += key + ": " + generated[key] + "<br>";
+                    }
+                }
+                document.getElementById("test").innerHTML = outputString;
+            };
+            roll();
+        };
+        if (!(typeof WebAssembly === 'object')) {
+            Module['onRuntimeInitialized']();
+        }
+    }
+</script>
+</body>
+<p id="test"></p>
+<p>Last modified: LASTMODIFIED</p>
+</html>
