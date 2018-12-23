@@ -5,11 +5,13 @@ extern crate serde_json;
 extern crate serde_derive;
 #[cfg(any(target_arch = "wasm32", target_arch = "asmjs"))]
 #[macro_use]
-extern crate lazy_static;
+extern crate stdweb;
+#[cfg(any(target_arch = "wasm32", target_arch = "asmjs"))]
+extern crate yew;
 
 #[cfg(any(target_arch = "wasm32", target_arch = "asmjs"))]
+mod web;
 
-pub mod ffi;
 mod serde_support;
 
 use std::collections::{BTreeMap, HashMap};
@@ -17,7 +19,7 @@ use std::ops::AddAssign;
 use std::str::FromStr;
 use std::fmt::{Display, Formatter};
 use rand::Rng;
-use rand::distributions::{WeightedChoice, Weighted, IndependentSample};
+use rand::distributions::{WeightedChoice, Weighted, Distribution};
 
 type Denied = BTreeMap<String, Vec<String>>;
 type Attributes = BTreeMap<String, Attribute>;
@@ -373,7 +375,7 @@ impl Generator {
                         })
                         .collect();
                     let wc = WeightedChoice::new(&mut vec);
-                    let vec = choices.remove(&wc.ind_sample(&mut random)).unwrap();
+                    let vec = choices.remove(&wc.sample(&mut random)).unwrap();
                     let option = &vec[random.gen_range(0, vec.len())];
                     match &options[option].generator {
                         &Generator::Nothing => {

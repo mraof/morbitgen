@@ -1,3 +1,5 @@
+#![feature(rust_2018_preview, uniform_paths)]
+
 extern crate serde_json;
 extern crate morbitgen;
 
